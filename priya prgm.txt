@@ -1,0 +1,380 @@
+(ELSE IF)
+#include <stdio.h>
+
+void main()
+{
+int days;
+printf("\n enter the days :");
+scanf("%d",&days);
+if(days>=1&&days<=5)
+{
+    printf("\n the fine amount : 50 paise");
+}
+else if(days>=6&&days<=10)
+{
+   printf("\n the fine amount : 1 rupee"); 
+}
+else if(days>=11&&days<=29)
+{
+   printf("\n the fine amount : 5 rupees"); 
+}
+else{
+    printf("\n membership cancelled");
+}
+}
+
+
+
+(ELSE IF)
+#include<stdio.h>
+void main()
+{
+    char country='v';
+    printf("\n enter the country name:");
+    scanf("%c",&country);
+    if(country=='i')
+    {
+        printf("\n country is india");
+    }
+    else if(country=='a')
+    {
+        printf("\n country is america");
+    }
+    else if(country=='d')
+    {
+        printf("\n country is denmark");
+    }
+    else{
+        printf("\n invalid data");
+    }
+}
+
+
+
+(ODD or EVEN)
+#include<stdio.h>
+void main()
+{
+    int a;
+    printf("\n enter the no:");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        printf("\n The no is even");
+    }
+    else 
+    {
+        printf("\n The no is odd");
+    }
+    
+}
+
+
+(VOWELS or NOT)
+void main()
+{
+    char c;
+    printf("\n enter the letter:");
+    scanf("%c",&c);
+    switch(c)
+    {
+        case 'a':
+        printf("\n the letter is vowel");
+        break;
+        case 'e':
+        printf("\n the letter is vowel");
+        break;
+        case 'i':
+        printf("\n the letter is vowel");
+        break;
+        case 'o':
+        printf("\n the letter is vowel");
+        break;
+        case 'u':
+        printf("\n the letter is vowel");
+        break;
+        default:
+        printf("\n the letter is not a vowel");
+        break;
+}
+}
+
+#include<stdio.h>
+void main()
+{
+    char c;
+    printf("\n enter the letter:");
+    scanf("%c",&c);
+    switch(c)
+    {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        printf("%c is vowel",c);
+        break;
+        default:
+        printf("%c is not an vowel",c);
+        break;
+}
+}
+
+
+(WHILE LOOP)
+#include<stdio.h>
+void main()
+{
+    int i=1;
+    while(i<=10)
+    {
+        printf("\n %d",i);
+        i++;
+    }
+}
+
+
+
+(FOR LOOP)
+  
+
+(SUM OF 2 VALUES USING CALL)
+#include<stdio.h>
+void sum();
+int main()
+{
+    sum();
+    return 0;
+}
+void sum()
+{
+ int a,b,c;
+ printf("\n Enter two values :");
+ scanf("%d%d",&a,&b);
+ c=a+b;
+ printf("\n %d",c);
+}
+
+
+(ARMSTRONG)
+#include<stdio.h>
+void main()
+{
+  int a,n,d1,d2,d3;
+  printf("\n enter he 3 digit no :");
+  scanf("%d",&a);
+  d3=a%10;//5
+  n=a/10;//22
+  d2=n%10;//2
+  d1=n/10;//2
+  n=(d1*d1*d1)+(d2*d2*d2)+(d3*d3*d3);
+if(a==n)
+{
+printf("%d is an armstrong no",a);
+}
+else{
+printf("%d is not an armstrong no",a);
+}}
+
+
+(ADD USING RETURN VALUE)
+#include<stdio.h>
+int sum();
+int main()
+{
+   int v = sum();
+   printf(" Result : \n %d",v);
+    return 0;
+}
+int sum()
+{
+ int a,b,c;
+ printf("\n Enter two values :");
+ scanf("%d%d",&a,&b);
+ c=a+b;
+ 
+ return c;
+}
+
+(HOTEL MANAGEMENT)
+#include<stdio.h>
+void main()
+{
+    int ch,qty,amt;
+    printf("\n\t MENU CARD");
+    printf("\n\t COFFEE     :RS.15");
+    printf("\n\t TEA        :RS.10");
+    printf("\n\t COLD COFFEE:RS.20");
+    printf("\n\t MILKSHAKE  :RS.50");
+    printf("\n Enter your choice :");
+    scanf("%d",&ch);
+    switch(ch)
+{
+    case 1:
+    printf("\n You have selected COFFEE");
+    printf("\n enter the quantity :");
+    scanf("%d",&qty);
+    amt=qty*15;
+    printf("\n total amount is :%d",amt);
+    break;
+    
+     case 2:
+    printf("\n You have selected TEA");
+    printf("\n enter the quantity :");
+    scanf("%d",&qty);
+    amt=qty*10;
+    printf("\n total amount is :%d",amt);
+    break;
+    
+     case 3:
+    printf("\n You have selected COLD COFFEE");
+    printf("\n enter the quantity :");
+    scanf("%d",&qty);
+    amt=qty*20;
+    printf("\n total amount is :%d",amt);
+    break;
+    
+     case 4:
+    printf("\n You have selected MILKSHAKE");
+    printf("\n enter the quantity :");
+    scanf("%d",&qty);
+    amt=qty*50;
+    printf("\n total amount is :%d",amt);
+    break;
+}
+}
+
+
+(RETURN TYPE SAMPLE)
+#include<stdio.h>
+int branch1();
+int branch2();
+int main()
+{
+   int v1= branch1();
+   int v2= branch2();
+   int V=v1+v2;
+   printf("\n sum value is %d",V);
+    return V;
+}
+int branch1()
+{
+   int g1=1000,g2=2000,G;
+   G=g1+g2;
+   printf("\ntotal is %d",G);
+   return G;
+}
+int branch2()
+{
+   int s1=100,s2=200,S;
+   S=s1+s2;
+   printf("\ntotal is %d",S);
+   return S;
+}
+
+
+(NESTED FOR)
+#include<stdio.h>
+void nmain()
+{
+    int i,j;
+    for(i=1;i<6;i++)
+    {
+        for(j=1;j<6;j++)
+        {
+            printf("*")
+        }
+    }
+}
+
+
+(ARRAY WITH CONDITIONS)
+void main()
+{
+    int n=6,i;
+    int a[6]={10,20,30,40,50,60};
+    for(i=0;i<6;i++)
+    {
+      if(a[i]>20)
+      {
+      printf("\n %d vote allowed",a[i]);  
+    }
+    else{
+        printf("\n %d vote not allowed",a[i]);
+    }
+}
+}
+
+(REVERSE A NO)
+#include<stdio.h>
+	void main()
+	{
+		int n,a,d1,d2,d3;
+		
+		printf("ENTER THE THREE DIGIT NUMBER:- ");
+		scanf("%d",&n);
+		
+		printf("AFTER REVERSE RESULT IS:- ");
+		d1 = n%10;
+		a = n/10;
+		d2 = a%10;
+		d3 = a/10;
+		
+		printf("%d%d%d",d1,d2,d3);
+
+	}
+    
+
+
+
+#include<stdio.h>
+	void main()
+	{
+		int i,a[10],n;
+		
+		printf("ENTER THE LIMIT:- ");
+		scanf("%d",&n);
+		for(i=0;i<n;i++)
+		{
+		    
+		    printf("\n enter n no");
+		    scanf("%d",&a[i]);
+		    printf("\n %d",a[i]);
+		    
+		}
+		
+
+
+public class Student {
+	
+	void sum() {
+		int a=10, b=30,c;
+		c =a+b;
+		System.out.println("REsult=============="+c);
+	}
+	
+	void data() {
+		String name = "Welcome";
+		System.out.println("Data=============="+name);
+	}
+	
+	void testLoop() {
+		
+		int n =5;
+		for(int i =0; i<n; i++) {
+			System.out.println(i);
+		}
+	}
+	
+	public static void main(String args[]) {
+		Student st = new Student();
+		st.sum();
+		st.data();
+		
+		School sch = new School();
+		sch.schoolData();
+		
+		st.testLoop();
+	}
+
+}
